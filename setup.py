@@ -5,6 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name='example_pypi_package',
+    version='0.1',
     author='Tom Chen',
     author_email='tomchen.org@gmail.com',
     description='Example PyPI (Python Package Index) Package',
@@ -39,7 +40,9 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
-    # install_requires=['Pillow'],
+    install_requires=[
+        # add dependencies here, e.g. 'Pillow'
+        ],
     extras_require={
         'dev': ['check-manifest'],
         # 'test': ['coverage'],
